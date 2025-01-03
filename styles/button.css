@@ -1,0 +1,37 @@
+a.button {
+    background-color: var(--color-pink-dark);
+    font: var(--font-button);
+    border-radius: 0.5rem;
+    margin-block: 0.5625rem;
+    height: 2.5rem;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+a.button span {
+    z-index: 1;
+}
+
+a.button:hover::after {
+    transform: scale(1);
+    width: 100%;
+    border-radius: 0.5rem;
+    background: var(--color-pink-base);
+}
+
+a.button::after {
+    content: "";
+    position: absolute;
+    width: calc(100% / 2);
+    height: inherit;
+    border-radius: 50%;
+    background: #9547a5;
+    transform: scale(0);
+    transition: transform 500ms;
+}
+
