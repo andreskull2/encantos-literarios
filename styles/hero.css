@@ -38,7 +38,7 @@ section#hero {
     padding-top: 2rem;
   }
   
-  section#hero div.text-container div.inner-text-container p {
+  section#hero div.inner-text-container p {
     font: var(--font-body-lg);
     text-align: center;
   }
