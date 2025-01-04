@@ -1,33 +1,38 @@
 a.button {
     background-color: var(--color-pink-dark);
     font: var(--font-button);
+    color: var(--color-text-title);
     border-radius: 0.5rem;
     height: 2.5rem;
     width: 100%;
-
+  
     display: flex;
     align-items: center;
     justify-content: center;
-
+  
     overflow: hidden;
     position: relative;
-}
-
-a.button span {
-    z-index: 1;
-}
-
-a.button:hover::after {
-    transform: scale(1);
-}
-
-a.button::after {
+  }
+  
+  a.button span {
+    z-index: 1; /* O texto permanece acima do efeito */
+  }
+  
+  a.button::after {
     content: "";
     position: absolute;
-    
-    border-radius: 50%;
-    background: var(--color-pink-base);
-    transform: scale(0);
-    transition: transform 500ms;
-}
-
+  
+    width: 10px; /* Tamanho inicial pequeno */
+    height: 10px;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%) scale(0); /* Inicia pequeno e centralizado */
+    border-radius: 50%; /* Formato circular */
+    background: var(--color-pink-base); /* Cor do círculo */
+    transition: transform 0.5s ease-out; /* Animação suave */
+  }
+  
+  a.button:hover::after {
+    transform: translate(-50%, -50%) scale(10); /* Expande para cobrir o botão */
+  }
+  

@@ -1,0 +1,51 @@
+section#hero {
+    height: 59.25rem;
+    position: relative;
+  }
+  
+  section#hero #hero-background {
+    background: url(../assets/img/hero-background-gradient.svg) top center/cover no-repeat;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: appear 1s forwards;
+    z-index: -1;
+  }
+  
+  section#hero #hero-background::after {
+    content: "";
+    background: url(../assets/img/hero-background.svg) top center/cover no-repeat;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: appear 2s 500ms forwards;
+  }
+  
+  section#hero div.text-container {
+    padding-top: 164px;
+    width: 41rem;
+    margin: auto;
+  }
+  
+  section#hero div.text-container h1 {
+    text-align: center;
+    font: var(--font-title-lg);
+  }
+  
+  section#hero div.text-container div.inner-text-container {
+    max-width: 558px;
+    margin: auto;
+    padding-top: 2rem;
+  }
+  
+  section#hero div.text-container div.inner-text-container p {
+    font: var(--font-body-lg);
+    text-align: center;
+  }
+  
+  @keyframes appear {
+    to {
+      opacity: 1;
+    }
+  }
+  
