@@ -3,7 +3,40 @@ section#hero {
     position: relative;
   }
   
-  section#hero #hero-background {
+section#hero header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 10rem 0 10rem;
+}
+
+section#hero header .button-wrapper {
+    width: 4.875rem;
+    margin-block: 0.5625rem;
+}
+
+section#hero .text-container {
+    padding-top: 164px;
+    width: 41rem;
+    margin: auto;
+}
+
+section#hero .text-container h1 {
+    text-align: center;
+    font: var(--font-title-lg);
+}
+
+section#hero .inner-text-container {
+    max-width: 558px;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+section#hero .inner-text-container p {
+    font: var(--font-body-lg);
+    text-align: center;
+}
+
+section#hero #hero-background {
     background: url(../assets/img/hero-background-gradient.svg) top center/cover no-repeat;
     position: absolute;
     inset: 0;
@@ -12,7 +45,7 @@ section#hero {
     z-index: -1;
   }
   
-  section#hero #hero-background::after {
+section#hero #hero-background::after {
     content: "";
     background: url(../assets/img/hero-background.svg) top center/cover no-repeat;
     position: absolute;
@@ -21,29 +54,9 @@ section#hero {
     animation: appear 2s 500ms forwards;
   }
   
-  section#hero div.text-container {
-    padding-top: 164px;
-    width: 41rem;
-    margin: auto;
-  }
+
   
-  section#hero div.text-container h1 {
-    text-align: center;
-    font: var(--font-title-lg);
-  }
-  
-  section#hero div.text-container div.inner-text-container {
-    max-width: 558px;
-    margin: auto;
-    padding-top: 2rem;
-  }
-  
-  section#hero div.inner-text-container p {
-    font: var(--font-body-lg);
-    text-align: center;
-  }
-  
-  @keyframes appear {
+@keyframes appear {
     to {
       opacity: 1;
     }
