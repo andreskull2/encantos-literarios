@@ -20,6 +20,9 @@ section#hero h1 {
     margin: auto;
     text-align: center;
     font: var(--font-title-lg);
+
+    opacity: 0;
+    animation: appear 2s 500ms forwards;
 }
 
 section#hero p {
@@ -28,6 +31,9 @@ section#hero p {
     padding-top: 2rem;
     font: var(--font-body-lg);
     text-align: center;
+
+    opacity: 0;
+    animation: appear 2s 1s forwards;
 }
 
 section#hero #hero-background {
