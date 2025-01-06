@@ -36,3 +36,25 @@ a.button {
     transform: translate(-50%, -50%) scale(10); /* Expande para cobrir o botão */
   }
   
+  a.button.blue {
+    background-color: var(--color-blue-dark) !important;
+  }
+
+  a.button.blue::after {
+    background: var(--color-blue-base);
+  }
+
+  /* Botões na seção Subscription */
+#subscription a.button {
+    width: auto; /* Permite ajuste de largura personalizada */
+}
+
+#subscription a.button::after {
+    width: 200%; /* Ajusta o tamanho para cobrir botões mais largos */
+    height: 200%; /* Mantém proporção */
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#subscription a.button:hover::after {
+    transform: translate(-50%, -50%) scale(1); /* Expande para cobrir o botão */
+}
