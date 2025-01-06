@@ -1,0 +1,133 @@
+section#receive-every-month {
+    padding-block: 6.51625rem 9.5rem;
+    padding-inline: 2rem;
+    text-align: center;
+  }
+  
+  section#receive-every-month img {
+    scale: 0;
+    transition: all 500ms;
+  }
+  
+  section#receive-every-month img:hover {
+    rotate: 10deg;
+  }
+  
+  section#receive-every-month h2 {
+    max-width: 75rem;
+    margin: auto;
+    font: var(--font-subtitle);
+    text-align: center;
+    color: rgb(226, 231, 233, 50%);
+  }
+  
+  section#receive-every-month h2 span b {
+    font-weight: bold;
+  }
+  
+  section#receive-every-month h2 > div {
+    --large-image: 5.0625rem;
+    height: calc(var(--large-image) + 0.4375rem);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  section#receive-every-month h2 > div #ouija-planchette {
+    min-width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section#receive-every-month h2 > div #ouija-planchette img {
+    height: 4.545625rem;
+    transform: rotate(99.47deg);
+  }
+  
+  section#receive-every-month h2 > div #ouija-planchette img:hover {
+    height: var(--large-image);
+  }
+  
+  section#receive-every-month h2 > div #cristal-ball {
+    display: flex;
+    align-items: center;
+    --large-image: 4.5625rem;
+    height: calc(var(--large-image) + 0.1875rem);
+  }
+  
+  section#receive-every-month h2 > div #cristal-ball img {
+    height: 4.0625rem;
+    transform: rotate(-14.48deg);
+  }
+  
+  section#receive-every-month h2 > div #cristal-ball img:hover {
+    height: var(--large-image);
+  }
+  
+  section#receive-every-month > div#opened-spellbook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --large-image: 5.5rem;
+    height: calc(var(--large-image) + 0.1875rem);
+  }
+  
+  section#receive-every-month > div#opened-spellbook img {
+    height: 5rem;
+    transform: rotate(20deg);
+  }
+  
+  section#receive-every-month > div#opened-spellbook img:hover {
+    height: var(--large-image);
+  }
+  
+  section#receive-every-month:hover > div#opened-spellbook img {
+    scale: 1;
+  }
+  
+  section#receive-every-month:hover h2 span:first-child {
+    animation: colorTextBody 500ms ease forwards;
+  }
+  
+  section#receive-every-month:hover h2 span:first-child b {
+    animation: colorBlue 500ms ease forwards;
+  }
+  
+  section#receive-every-month:hover h2 span:nth-child(2) {
+    animation: colorTextBody 500ms ease 500ms forwards;
+  }
+  
+  section#receive-every-month:hover h2 span:nth-child(2) b {
+    animation: colorBlue 500ms ease 500ms forwards;
+  }
+  
+  section#receive-every-month:hover h2 span:nth-child(3) {
+    animation: colorTextBody 500ms ease 1s forwards;
+  }
+  
+  section#receive-every-month:hover h2 span:nth-child(3) b {
+    animation: colorBlue 500ms ease 1s forwards;
+  }
+  
+  section#receive-every-month:hover h2 > div #ouija-planchette img {
+    transition: all 500ms, scale 500ms 500ms;
+    scale: 1;
+  }
+  
+  section#receive-every-month:hover h2 > div #cristal-ball img {
+    transition: all 500ms, scale 500ms 1s;
+    scale: 1;
+  }
+  
+  @keyframes colorTextBody {
+    to {
+      color: var(--color-text-body);
+    }
+  }
+  
+  @keyframes colorBlue {
+    to {
+      color: var(--color-blue-light);
+    }
+  }
+  
