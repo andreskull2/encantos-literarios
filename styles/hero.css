@@ -14,6 +14,10 @@ section#hero header .button-wrapper {
     margin-block: 0.5625rem;
 }
 
+section#hero header > a > img {
+    max-width: 14.375rem;
+}
+
 section#hero h1 {
     padding-top: 10.25rem;
     max-width: 41rem;
