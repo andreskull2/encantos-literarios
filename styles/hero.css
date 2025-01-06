@@ -14,24 +14,18 @@ section#hero header .button-wrapper {
     margin-block: 0.5625rem;
 }
 
-section#hero .text-container {
+section#hero h1 {
     padding-top: 164px;
     width: 41rem;
     margin: auto;
-}
-
-section#hero .text-container h1 {
     text-align: center;
     font: var(--font-title-lg);
 }
 
-section#hero .inner-text-container {
+section#hero p {
     max-width: 558px;
     margin: auto;
     padding-top: 2rem;
-}
-
-section#hero .inner-text-container p {
     font: var(--font-body-lg);
     text-align: center;
 }
