@@ -1,21 +1,29 @@
 section#hero {
     height: 59.25rem;
     position: relative;
+    padding-inline: 1.25rem;
   }
   
 section#hero header {
     display: flex;
     justify-content: space-between;
-    padding: 3.5rem 10rem 0 10rem;
+    max-width: 70rem;
+    margin: auto;
+    padding-top: 3.5rem;
 }
 
-section#hero header .button-wrapper {
+section#hero header div.button-wrapper {
     width: 4.875rem;
     margin-block: 0.5625rem;
 }
 
-section#hero header > a > img {
+section#hero header > a > img.only-desktop {
     max-width: 14.375rem;
+}
+
+section#hero header > a > img.only-mobile {
+    max-width: 4.875rem;
+    display: none;
 }
 
 section#hero h1 {
@@ -55,6 +63,7 @@ section#hero #hero-background::after {
     background: url(../assets/img/hero-background.svg) top center/cover no-repeat;
     position: absolute;
     inset: 0;
+    height: 100%;
     opacity: 0;
     animation: appear 2s 500ms forwards;
   }
@@ -67,3 +76,18 @@ section#hero #hero-background::after {
     }
   }
   
+ @media (max-width: 71.25rem) {
+    section#hero header {
+        padding-top: 1.25rem;
+    }
+ } 
+
+ @media (max-width: 23.4375rem) {
+    section#hero header > a img.only-desktop {
+        display: none;
+    }
+
+    section#hero header > a img.only-mobile {
+        display: inline-block;
+    }
+ }
