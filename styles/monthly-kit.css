@@ -1,4 +1,4 @@
-/* Seletor para o ID 'monthly-kit' */
+/* Ajustes no container principal */
 section#monthly-kit {
     padding-top: 14.6875rem;
     text-align: center;
@@ -26,38 +26,48 @@ section#monthly-kit {
   /* Hover aplicado a .book-container (corrigido de #book-container para .book-container) */
   section#monthly-kit .book-container:hover .book-content p:first-child {
     transform: translate(-190%, -700%);
+    transition: transform 0.4s ease-in-out;
+
   }
   
   section#monthly-kit .book-container:hover .book-content img[src*="arrow-from-book"] {
     transform: translate(-115%, -500%);
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-container:hover .book-content > img[src*="bookmark-yellow"] {
     transform: translate(65%, -20%) rotate(12deg);
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-container:hover .book-content > img[src*="bookmark-purple"] {
     transform: translate(123%, -2%) rotate(22deg);
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-container:hover .book-content > img[src*="arrow-from-purple-bookmark"] {
     transform: translate(160%, 80%);
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-container:hover .book-content p:nth-child(7) {
     transform: translate(105%, 800%);
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-container:hover .book-content p:nth-child(8) {
     transform: translateX(-210%);
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-container:hover .book-content > img[src*="arrow-from-pin"] {
     transform: translate(-308%, 0%) !important;
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-container:hover .book-content > img[src*="pin"] {
     transform: translate(-72%, 28%) rotate(-8deg);
+    transition: transform 0.4s ease-in-out;
   }
   
   /* Restante do estilo aplicado para .book-content */
@@ -77,12 +87,13 @@ section#monthly-kit {
     color: var(--color-text-title);
   }
   
+  /* Elementos com posições absolutas para animação */
   section#monthly-kit .book-content p:first-child {
     position: absolute;
     top: 25%;
     left: 30%;
     z-index: -1;
-    transition: all 400ms;
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-content img[src*="arrow-from-book"] {
@@ -91,7 +102,7 @@ section#monthly-kit {
     top: 30%;
     left: 30%;
     z-index: -1;
-    transition: all 400ms;
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-content > img[src*="bookmark"] {
@@ -103,12 +114,12 @@ section#monthly-kit {
   
   section#monthly-kit .book-content > img[src*="bookmark-yellow"] {
     z-index: -1;
-    transition: all 400ms;
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-content > img[src*="bookmark-purple"] {
     z-index: -2;
-    transition: all 400ms;
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-content > img[src*="arrow-from-purple-bookmark"] {
@@ -117,7 +128,7 @@ section#monthly-kit {
     left: 57%;
     top: 60%;
     z-index: -2;
-    transition: all 400ms;
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-content p:nth-child(7) {
@@ -125,7 +136,7 @@ section#monthly-kit {
     top: 72%;
     left: 53%;
     z-index: -1;
-    transition: all 400ms;
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-content p:nth-child(8) {
@@ -133,7 +144,7 @@ section#monthly-kit {
     top: 50%;
     left: 30%;
     z-index: -1;
-    transition: all 400ms;
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-content > img[src*="arrow-from-pin"] {
@@ -142,7 +153,7 @@ section#monthly-kit {
     left: 40% !important;
     top: 54% !important;
     z-index: -2 !important;
-    transition: all 400ms;
+    transition: transform 0.4s ease-in-out;
   }
   
   section#monthly-kit .book-content > img[src*="pin"] {
@@ -151,6 +162,5 @@ section#monthly-kit {
     left: 26%;
     top: 55%;
     z-index: -1;
-    transition: all 400ms;
+    transition: transform 0.4s ease-in-out;
   }
-  
