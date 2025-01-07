@@ -26,7 +26,7 @@ This project was developed with the following technologies:
 ## 💻 Project
 This project is a book club called 'Literary Charms' and offers a book subscription service.
 
-- [Access the finished project]()
+- [Access the finished project](https://andreskull2.github.io/encantos-literarios/)
 - [Watch the classes](https://www.rocketseat.com.br/formacao/fullstack)
 
 ## 🔖 Layout
