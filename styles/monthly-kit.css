@@ -20,7 +20,7 @@ section#monthly-kit {
   section#monthly-kit > p {
     font: var(--font-body-md);
     color: var(--color-text-body);
-    padding-block: 0.3125rem 88px;
+    padding-block: 0.3125rem 5.5rem;
   }
   
   /* Hover aplicado a .book-container (corrigido de #book-container para .book-container) */
@@ -41,7 +41,7 @@ section#monthly-kit {
   }
   
   section#monthly-kit .book-container:hover .book-content > img[src*="arrow-from-purple-bookmark"] {
-    transform: translate(230px, 140px);
+    transform: translate(160%, 80%);
   }
   
   section#monthly-kit .book-container:hover .book-content p:nth-child(7) {
@@ -53,23 +53,23 @@ section#monthly-kit {
   }
   
   section#monthly-kit .book-container:hover .book-content > img[src*="arrow-from-pin"] {
-    transform: translate(-250px, -50px) !important;
+    transform: translate(-308%, 0%) !important;
   }
   
   section#monthly-kit .book-container:hover .book-content > img[src*="pin"] {
-    transform: translate(-162px, 80px) rotate(-8deg);
+    transform: translate(-72%, 28%) rotate(-8deg);
   }
   
   /* Restante do estilo aplicado para .book-content */
   section#monthly-kit .book-content {
     position: relative;
-    max-width: 879px;
+    width: 54.9375rem;
     margin: auto;
   }
   
   section#monthly-kit .book-content img[src$="monthly-kit/book.svg"] {
-    padding-block: 134px 169px;
-    max-width: 467px;
+    padding-block: 8.375rem 10.5625rem;
+    width: 29.1875rem;
   }
   
   section#monthly-kit .book-content p {
@@ -86,7 +86,7 @@ section#monthly-kit {
   }
   
   section#monthly-kit .book-content img[src*="arrow-from-book"] {
-    max-width: 175px;
+    width: 10.9375rem;
     position: absolute;
     top: 30%;
     left: 30%;
@@ -95,9 +95,10 @@ section#monthly-kit {
   }
   
   section#monthly-kit .book-content > img[src*="bookmark"] {
+    width: 13.75rem;
     position: absolute;
     left: 53%;
-    top: 17%;
+    top: 15%;
   }
   
   section#monthly-kit .book-content > img[src*="bookmark-yellow"] {
@@ -111,10 +112,10 @@ section#monthly-kit {
   }
   
   section#monthly-kit .book-content > img[src*="arrow-from-purple-bookmark"] {
-    max-width: 145px;
+    width: 9.0625rem;
     position: absolute;
     left: 57%;
-    top: 58%;
+    top: 60%;
     z-index: -2;
     transition: all 400ms;
   }
@@ -136,16 +137,16 @@ section#monthly-kit {
   }
   
   section#monthly-kit .book-content > img[src*="arrow-from-pin"] {
-    max-width: 105px;
+    width: 6.5625rem !important;
     position: absolute !important;
-    left: 30% !important;
-    top: 60% !important;
+    left: 40% !important;
+    top: 54% !important;
     z-index: -2 !important;
     transition: all 400ms;
   }
   
   section#monthly-kit .book-content > img[src*="pin"] {
-    max-width: 222px;
+    width: 13.875rem;
     position: absolute;
     left: 26%;
     top: 55%;
