@@ -90,3 +90,41 @@ footer {
     color: var(--color-text-body);
   }
   
+  @media (max-width: 44.3125rem) {
+    footer {
+        background: url(../assets/img/book-trace-background-mobile.svg) top center/cover no-repeat;
+        padding-block: 6.125rem 2.375rem;
+    }
+
+    footer > div#footer-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    footer > div#footer-container > div:first-child {
+        max-width: 19.4375rem;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2.5rem;
+    }
+
+    footer > div#footer-container > div:first-child > a {
+        max-width: 9.91375rem;
+        display: inline-block;
+        margin-inline: auto;
+    }
+
+    footer > div#footer-container > div:first-child > a img {
+        max-width: inherit;
+    }
+
+    footer > div#footer-container > div:first-child > div:nth-child(3) {
+        gap: 0.8875rem;
+    }
+
+    footer > div#footer-container > div:last-child {
+        width: 19.4375rem;
+        gap: 1.5rem;
+    }
+  }
