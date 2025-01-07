@@ -3,7 +3,7 @@ footer {
     padding-block: 10.625rem;
     padding-inline: 2rem;
     margin: auto;
-    background: url(../assets/book-trace-background.svg) top center/cover no-repeat;
+    background: url(../assets/img/book-trace-background.svg) top center/cover no-repeat;
   }
   
   footer > div#footer-container {
