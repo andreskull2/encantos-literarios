@@ -44,6 +44,7 @@ a.button {
     background: var(--color-blue-base);
   }
 
+
   /* Botões na seção Subscription */
 #subscription a.button {
     width: auto; /* Permite ajuste de largura personalizada */
